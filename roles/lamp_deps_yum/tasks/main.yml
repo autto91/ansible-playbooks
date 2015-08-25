@@ -1,0 +1,9 @@
+- name: Install Apache/Httpd
+  yum: name=httpd status=latest
+
+- name: Install PHP
+  yum: name=php status=latest
+
+- name: Install Mariadb
+  yum: name=mariadb status=latest
+  

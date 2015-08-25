@@ -1,0 +1,7 @@
+#add hostname or IP addresses for servers here
+
+[webservers]
+
+[rhel_servers]
+
+[ubuntu_servers]

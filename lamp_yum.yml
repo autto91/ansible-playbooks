@@ -1,0 +1,9 @@
+- name: Setup LAMP stack on RHEL/CentOS 7 systems
+  hosts: rhel_servers # or other host group
+  remote_user: admin # or other user
+  sudo: yes
+
+  roles:
+    - yum_update
+    - lamp_deps_yum
+    - services_firewalld

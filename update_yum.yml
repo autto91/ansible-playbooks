@@ -1,0 +1,7 @@
+- name: Update all packages on all hosts via Yum
+  hosts: all
+  remote_user: admin # or other user
+  sudo: yes
+
+  roles:
+    - yum_update

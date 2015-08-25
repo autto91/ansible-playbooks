@@ -1,0 +1,17 @@
+- name: Enable Apache
+  service: name=httpd enabled=yes
+
+- name: Enable Mariadb
+  service: name=mariadb enabled=yes
+
+- name: Start Apache
+  service: name=httpd state=started
+
+- name: Start Mariadb
+  service: name=mariadb state=started
+
+- name: Open port 80
+  firewalld: service=http permanent=true state=enabled
+
+- name: Open port 443
+  firewalld: service=https permanent=true state=enabled
